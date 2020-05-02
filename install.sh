@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 apt update && apt dist-upgrade -y && apt autoremove -y && apt autoclean -y
 apt install -y ansible git hcloud-cli
 useradd -s /bin/bash -d /home/ansible -m -G users ansible
