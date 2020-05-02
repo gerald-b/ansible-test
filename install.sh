@@ -20,4 +20,10 @@ echo -e "***"
 echo -e "************************************************************"
 # hcloud context create my-controller
 su - ansible -c 'hcloud context create my-controller'
-su - ansible -c 'git clone https://github.com/gerald-b/ansible-test.git .'
+# su - ansible -c 'git clone https://github.com/gerald-b/ansible-test.git .'
+su - ansible -c 'git init'
+su - ansible -c 'git remote add origin https://github.com/gerald-b/ansible-test.git'
+su - ansible -c 'git fetch'
+# Required when the versioned files existed in path before "git init" of this repo.
+su - ansible -c 'git reset origin/master'
+su - ansible -c 'git checkout -t origin/master'
