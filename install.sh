@@ -20,3 +20,4 @@ echo -e "***"
 echo -e "************************************************************"
 # hcloud context create my-controller
 su - ansible -c 'hcloud context create my-controller'
+su - ansible -c 'git clone https://github.com/gerald-b/ansible-test.git .'
