@@ -27,3 +27,4 @@ su - ansible -c 'git fetch origin'
 # Required when the versioned files existed in path before "git init" of this repo.
 su - ansible -c 'git reset --hard origin/master'
 su - ansible -c 'git branch --set-upstream-to=origin/master master'
+su - ansible -c 'chmod a+x ~/*.sh'
