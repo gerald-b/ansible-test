@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-if [ "$(id -u)" -eq "1001" ]; then
+if [ "$(id -u)" -eq "1000" ]; then
         rolename=${1}
         cd ~
         mkdir -p roles/${rolename}/{tasks,handlers,templates,files,vars,defaults,meta,library,lookup_plugins,module_utils}
